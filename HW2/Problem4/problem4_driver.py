@@ -1,32 +1,113 @@
 from problem4 import SortedDoublyLinkedList
 
 
-lst = SortedDoublyLinkedList()
+def main():
+    linked_list = SortedDoublyLinkedList()
 
-lst.add(10)
-lst.add(4)
-lst.add(29)
-lst.add(8)
-lst.add(2)
-lst.add(15)
-lst.add(41)
+    for line_number, line in enumerate(__import__("sys").stdin, start=1):
+        line = line.strip()
 
-lst.print_list()
-print(lst.total())
-print(lst.sum_middle_three())
-print(lst.median())
+        # Ignore blank lines and comments
+        if not line or line.startswith("#"):
+            continue
 
-lst.delete(41)
+        parts = line.split()
+        command = parts[0].lower()
+        arguments = parts[1:]
 
-lst.print_list()
-print(lst.total())
-print(lst.sum_middle_three())
-print(lst.median())
+        try:
+            if command == "add":
+                if len(arguments) != 1:
+                    print(f"line {line_number}: expected 'add <value>', got '{line}'")
+                    continue
 
-lst.add(8)
+                value = float(arguments[0])
 
-lst.print_list()
-print(lst.count(8))
-print(lst.count(5))
-print(lst.exists(15))
-print(lst.exists(5))
+                if value.is_integer():
+                    value = int(value)
+
+                linked_list.add(value)
+
+            elif command == "delete":
+                if len(arguments) != 1:
+                    print(
+                        f"line {line_number}: expected 'delete <value>', got '{line}'"
+                    )
+                    continue
+
+                value = float(arguments[0])
+
+                if value.is_integer():
+                    value = int(value)
+
+                linked_list.delete(value)
+
+            elif command == "exists":
+                if len(arguments) != 1:
+                    print(
+                        f"line {line_number}: expected 'exists <value>', got '{line}'"
+                    )
+                    continue
+
+                value = float(arguments[0])
+
+                if value.is_integer():
+                    value = int(value)
+
+                print(linked_list.exists(value))
+
+            elif command == "count":
+                if len(arguments) != 1:
+                    print(
+                        f"line {line_number}: expected 'count <value>', got '{line}'"
+                    )
+                    continue
+
+                value = float(arguments[0])
+
+                if value.is_integer():
+                    value = int(value)
+
+                print(linked_list.count(value))
+
+            elif command == "print_list":
+                if len(arguments) != 0:
+                    print(
+                        f"line {line_number}: expected 'print_list', got '{line}'"
+                    )
+                    continue
+
+                linked_list.print_list()
+
+            elif command == "total":
+                if len(arguments) != 0:
+                    print(f"line {line_number}: expected 'total', got '{line}'")
+                    continue
+
+                print(linked_list.total())
+
+            elif command == "sum_middle_three":
+                if len(arguments) != 0:
+                    print(
+                        f"line {line_number}: expected 'sum_middle_three', got '{line}'"
+                    )
+                    continue
+
+                print(linked_list.sum_middle_three())
+
+            elif command == "median":
+                if len(arguments) != 0:
+                    print(f"line {line_number}: expected 'median', got '{line}'")
+                    continue
+
+                print(linked_list.median())
+
+            else:
+                print(f"line {line_number}: unknown directive '{command}'")
+
+        except ValueError as error:
+            print(f"line {line_number}: {error}")
+
+
+if __name__ == "__main__":
+    main()
