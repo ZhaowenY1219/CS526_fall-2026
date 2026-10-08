@@ -1,0 +1,89 @@
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_basic.txt
+2 <-> 4 <-> 8 <-> 10 <-> 29
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_duplicates.txt
+1 <-> 3 <-> 3 <-> 7 <-> 7 <-> 7
+3
+2
+1
+0
+1 <-> 3 <-> 3 <-> 7 <-> 7
+2
+0
+False
+1 <-> 3 <-> 3
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_errors.txt
+line 2: cannot find median of an empty list
+line 3: list must have at least 3 nodes
+line 7: list must have at least 3 nodes
+line 8: unknown directive 'insert'
+line 9: expected 'add <value>', got 'add'
+line 10: could not convert string to float: 'five'
+line 11: expected 'count <value>', got 'count'
+line 12: expected 'exists <value>', got 'exists 1 2'
+line 13: expected 'print_list', got 'print_list extra'
+1 <-> 3 <-> 5
+9
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_mixed.txt
+4 <-> 8 <-> 15 <-> 16 <-> 17 <-> 23 <-> 42
+True
+False
+1
+125
+16
+48
+1 <-> 8 <-> 15 <-> 16 <-> 17 <-> 23 <-> 100
+180
+16
+48
+1 <-> 8 <-> 15 <-> 16 <-> 16 <-> 16 <-> 17 <-> 23 <-> 100
+3
+16
+48
+15 <-> 17
+16.0
+32
+line 46: list must have at least 3 nodes
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_numbers.txt
+-4 <-> -1.5 <-> 0 <-> 2.5 <-> 3 <-> 10
+10.0
+1.25
+1.0
+True
+True
+False
+1
+-1.5 <-> 0 <-> 3 <-> 10
+1.5
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_positions.txt
+50
+10 <-> 50
+10 <-> 50 <-> 90
+10 <-> 30 <-> 50 <-> 70 <-> 90
+30 <-> 50 <-> 70 <-> 90
+30 <-> 50 <-> 70
+30 <-> 70
+(empty)
+20 <-> 60
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_simple.txt
+1 <-> 3 <-> 5
+True
+False
+1 <-> 5
+@ZhaowenY1219 ➜ /workspaces/CS526_fall-2026/HW2/Problem4 (main) $ python3 problem4_driver.py < problem4Resources/problem4_statistics.txt
+0
+2 <-> 4 <-> 6
+12
+12
+4
+2 <-> 4 <-> 6 <-> 8
+20
+12
+5.0
+2 <-> 4 <-> 6 <-> 8 <-> 10
+30
+18
+6
+2 <-> 4 <-> 6 <-> 8 <-> 10 <-> 12
+42
+18
+7.0
