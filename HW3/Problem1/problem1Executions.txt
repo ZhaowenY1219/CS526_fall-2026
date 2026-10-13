@@ -1,0 +1,243 @@
+===== palendrome_0.txt =====
+Command: python3 problem1.py < palendrome_0.txt
+False
+True
+False
+True
+False
+True
+3
+PASS: palendrome_0.txt
+
+===== palendrome_0L.txt =====
+Command: python3 problem1.py < palendrome_0L.txt
+False
+True
+True
+False
+False
+False
+True
+False
+True
+False
+True
+True
+False
+True
+True
+False
+True
+False
+False
+9
+PASS: palendrome_0L.txt
+
+===== palendrome_0S.txt =====
+Command: python3 problem1.py < palendrome_0S.txt
+True
+False
+False
+False
+True
+False
+True
+True
+True
+False
+True
+False
+False
+6
+PASS: palendrome_0S.txt
+
+===== palendrome_1.txt =====
+Command: python3 problem1.py < palendrome_1.txt
+False
+False
+False
+False
+True
+False
+True
+False
+2
+PASS: palendrome_1.txt
+
+===== palendrome_1L.txt =====
+Command: python3 problem1.py < palendrome_1L.txt
+True
+True
+False
+True
+True
+True
+True
+True
+True
+True
+False
+True
+True
+11
+PASS: palendrome_1L.txt
+
+===== palendrome_1S.txt =====
+Command: python3 problem1.py < palendrome_1S.txt
+True
+False
+False
+True
+True
+True
+False
+True
+True
+True
+True
+True
+True
+False
+True
+True
+12
+PASS: palendrome_1S.txt
+
+===== palendrome_2.txt =====
+Command: python3 problem1.py < palendrome_2.txt
+True
+False
+False
+True
+True
+3
+PASS: palendrome_2.txt
+
+===== palendrome_2L.txt =====
+Command: python3 problem1.py < palendrome_2L.txt
+True
+False
+False
+True
+True
+True
+False
+True
+True
+True
+True
+8
+PASS: palendrome_2L.txt
+
+===== palendrome_2S.txt =====
+Command: python3 problem1.py < palendrome_2S.txt
+False
+True
+False
+False
+True
+True
+False
+False
+True
+False
+4
+PASS: palendrome_2S.txt
+
+===== palendrome_3.txt =====
+Command: python3 problem1.py < palendrome_3.txt
+False
+True
+False
+True
+2
+PASS: palendrome_3.txt
+
+===== palendrome_3L.txt =====
+Command: python3 problem1.py < palendrome_3L.txt
+True
+True
+True
+True
+True
+True
+True
+False
+False
+7
+PASS: palendrome_3L.txt
+
+===== palendrome_3S.txt =====
+Command: python3 problem1.py < palendrome_3S.txt
+True
+False
+True
+True
+True
+False
+False
+True
+False
+True
+False
+True
+False
+True
+True
+False
+False
+True
+True
+True
+12
+PASS: palendrome_3S.txt
+
+===== palendrome_4.txt =====
+Command: python3 problem1.py < palendrome_4.txt
+True
+True
+False
+False
+False
+True
+True
+False
+False
+4
+PASS: palendrome_4.txt
+
+===== palendrome_4L.txt =====
+Command: python3 problem1.py < palendrome_4L.txt
+False
+True
+False
+True
+False
+False
+True
+False
+False
+False
+False
+False
+True
+False
+False
+4
+PASS: palendrome_4L.txt
+
+===== palendrome_4S.txt =====
+Command: python3 problem1.py < palendrome_4S.txt
+True
+False
+False
+False
+False
+False
+True
+True
+False
+True
+4
+PASS: palendrome_4S.txt
+
