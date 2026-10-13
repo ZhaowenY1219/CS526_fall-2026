@@ -97,3 +97,14 @@ A vertical line cannot be represented using the usual slope-intercept formula be
 
 Save the Python source code as problem4.py
 
+Run one test：
+
+python3 problem4.py < problem4Resources/ghostbusters_input_0.txt
+
+To run all 11 test cases, use the following commands:
+
+for i in $(seq 0 10); do
+    python3 problem4.py < "problem4Resources/ghostbusters_input_${i}.txt"
+done
+
+The test execution results are saved in problem4Executions.txt.
