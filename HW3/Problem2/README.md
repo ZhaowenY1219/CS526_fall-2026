@@ -66,6 +66,11 @@ IV. Sort and output the results
 
 Save the Python source code as problem2.py
 
+python3 problem2.py < problem2Resources/unique_substrings_input_0.txt
+
+python3 problem2.py < problem2Resources/unique_substrings_input_1.txt
+
+python3 problem2.py < problem2Resources/unique_substrings_input_2.txt
 
 
 
