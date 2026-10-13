@@ -1,0 +1,55 @@
+===== problem4Resources/ghostbusters_input_0.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_0.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_0.txt
+
+===== problem4Resources/ghostbusters_input_1.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_1.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_1.txt
+
+===== problem4Resources/ghostbusters_input_2.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_2.txt
+All Ghosts: were eliminated
+PASS: problem4Resources/ghostbusters_input_2.txt
+
+===== problem4Resources/ghostbusters_input_3.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_3.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_3.txt
+
+===== problem4Resources/ghostbusters_input_4.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_4.txt
+All Ghosts: were eliminated
+PASS: problem4Resources/ghostbusters_input_4.txt
+
+===== problem4Resources/ghostbusters_input_5.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_5.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_5.txt
+
+===== problem4Resources/ghostbusters_input_6.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_6.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_6.txt
+
+===== problem4Resources/ghostbusters_input_7.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_7.txt
+All Ghosts: were eliminated
+PASS: problem4Resources/ghostbusters_input_7.txt
+
+===== problem4Resources/ghostbusters_input_8.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_8.txt
+All Ghosts: were eliminated
+PASS: problem4Resources/ghostbusters_input_8.txt
+
+===== problem4Resources/ghostbusters_input_9.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_9.txt
+All Ghosts: were eliminated
+PASS: problem4Resources/ghostbusters_input_9.txt
+
+===== problem4Resources/ghostbusters_input_10.txt =====
+Command: python3 problem4.py < problem4Resources/ghostbusters_input_10.txt
+All Ghosts: were not eliminated
+PASS: problem4Resources/ghostbusters_input_10.txt
+
