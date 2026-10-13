@@ -1,0 +1,95 @@
+===== problem2Resources/unique_substrings_input_0.txt =====
+Command: python3 problem2.py < problem2Resources/unique_substrings_input_0.txt
+a
+ab
+abc
+abca
+abcab
+b
+bc
+bca
+bcab
+c
+ca
+cab
+12
+PASS: problem2Resources/unique_substrings_input_0.txt
+
+===== problem2Resources/unique_substrings_input_1.txt =====
+Command: python3 problem2.py < problem2Resources/unique_substrings_input_1.txt
+a
+ab
+aba
+abad
+abadu
+abaduk
+abaduka
+abadukab
+abc
+abca
+abcab
+abcaba
+abcabad
+abcabadu
+abcabaduk
+abcabaduka
+abcabadukab
+ad
+adu
+aduk
+aduka
+adukab
+b
+ba
+bad
+badu
+baduk
+baduka
+badukab
+bc
+bca
+bcab
+bcaba
+bcabad
+bcabadu
+bcabaduk
+bcabaduka
+bcabadukab
+c
+ca
+cab
+caba
+cabad
+cabadu
+cabaduk
+cabaduka
+cabadukab
+d
+du
+duk
+duka
+dukab
+k
+ka
+kab
+u
+uk
+uka
+ukab
+59
+PASS: problem2Resources/unique_substrings_input_1.txt
+
+===== problem2Resources/unique_substrings_input_2.txt =====
+Command: python3 problem2.py < problem2Resources/unique_substrings_input_2.txt
+x
+xy
+xyz
+xyzy
+y
+yz
+yzy
+z
+zy
+9
+PASS: problem2Resources/unique_substrings_input_2.txt
+
