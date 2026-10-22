@@ -21,12 +21,12 @@ Step 2: Read all lines from the input file
 
 Step 3: Remove spaces and prepare the current string
 
-     3.1 Use `line.strip()` to remove leading and trailing whitespace characters from a string;
+     3.1 Use 'line.strip()' to remove leading and trailing whitespace characters from a string;
 
-     3.2 then use `replace(" ", "")` to remove ordinary spaces used as separators between characters and preserve the original case of the characters.
+     3.2 then use 'replace(" ", "")' to remove ordinary spaces used as separators between characters and preserve the original case of the characters.
 
 
-Step 4: Call 'is_palindrome(s)'function to determine if a string is a palindrome
+Step 4: Call 'is_palindrome(s)' function to determine if a string is a palindrome
 
      4.1 Initialize the left and right pointers
 
@@ -54,7 +54,7 @@ Step 4: Call 'is_palindrome(s)'function to determine if a string is a palindrome
 
         'right=right-1', shifting it one position to the left,
 
-        Then, returning to the `while left < right` condition, the comparison of the new left and right characters continues.
+        Then, returning to the 'while left < right' condition, the comparison of the new left and right characters continues.
 
      4.5 Return True if all comparisons match & return False if comparisons do not match
 
@@ -63,16 +63,16 @@ Step 4: Call 'is_palindrome(s)'function to determine if a string is a palindrome
 
 Step 5: Print the result and update the counter
 
-     5.1 Use `print(result)` to output the result of the comparison of the current string
+     5.1 Use 'print(result)' to output the result of the comparison of the current string
 
-         If `result` is True, the current string is a palindrome, so `palindrome_count` is incremented by 1.
+         If result is True, the current string is a palindrome, so `palindrome_count` is incremented by 1.
 
-         If `result` is False, the current string is not a palindrome, and the counter is not incremented.
+         If result is False, the current string is not a palindrome, and the counter is not incremented.
 
 
 Step 6: Print the total number of palindromes
 
-After all input lines have been processed, use `print(palindrome_count)` to output the total number of palindromes
+After all input lines have been processed, use 'print(palindrome_count)' to output the total number of palindromes
 
 
 ##interesting aspect
