@@ -2,7 +2,9 @@
 README.txt - Problem 2: Unique substring
 ================================================================================
 
+--------------------------------------------------------------------------------
 ##introduction
+--------------------------------------------------------------------------------
 
 My program reads one string from the input file and uses two recursive functions to generate all consecutive substrings. 
 
@@ -13,7 +15,10 @@ The second recursive function moves the starting position forward to process the
 The program stores the substrings in a set to remove duplicates, then sorts them alphabetically and prints each unique substring on a separate line. Finally, it prints the total number of unique substrings.
 
 
+--------------------------------------------------------------------------------
 ##Algorithm 
+--------------------------------------------------------------------------------
+
 
 I. Initialization Result Set
 
@@ -29,7 +34,6 @@ If end >= len(s), it means there are no more characters to add to the substring 
 2. If the stopping condition is not met, generate the slice 's[start:end + 1]' (because the right boundary of the slice is not included in the result, the index of the right boundary is 'end + 1'), and add the substring to the result collection.
 
 3. Increment end by 1, recursively call function A, and continue to expand the substring corresponding to the current starting position.
-
 
 
 III. Recursive function B: Moves to the starting position
@@ -54,7 +58,10 @@ IV. Sort and output the results
 3. Use 'len(result)' to count the number of distinct substrings in the collection and print this total.
 
 
+--------------------------------------------------------------------------------
 ##Interesting aspects
+--------------------------------------------------------------------------------
+
 
 1.This program uses two recursive functions. 'extend_substrings()' generates substrings by keeping the starting index fixed and increasing the ending index. 'generate_substrings()' moves the starting index forward to process every possible starting position
 
@@ -63,7 +70,9 @@ IV. Sort and output the results
 3.This program uses 'sorted()' to arrange the unique substrings alphabetically before printing them
 
 
+--------------------------------------------------------------------------------
 ##How to run
+--------------------------------------------------------------------------------
 
 Save the Python source code as problem2.py
 
