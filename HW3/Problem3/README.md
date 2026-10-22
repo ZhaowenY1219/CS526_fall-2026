@@ -3,11 +3,16 @@
 README.txt - Problem 3: Reverses a stack 
 ================================================================================
 
+
+--------------------------------------------------------------------------------
 ## Introduction
+--------------------------------------------------------------------------------
 
 My program pushes the numbers 1 through 10 onto each stack, prints the stack before reversing, reverses the existing stack using recursion, and prints the stack again after reversing.
 
+--------------------------------------------------------------------------------
 ## Algorithm
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 Create three types of stacks
@@ -116,14 +121,18 @@ Step 16. Call 'reverse_stack()' on the singly linked list 'Stack', then print th
 Step 17. Call 'reverse_stack()' on the doubly linked list 'Stack', then print the reversed contents.
 
 
-
+--------------------------------------------------------------------------------
 ##interesting things
+--------------------------------------------------------------------------------
 
 1.Recursive design: The program uses two recursive functions. 'reverse_stack()' reverses the remaining stack, while 'insert_at_bottom()' inserts a saved element at the bottom.
 
 2.Base cases: Both recursive functions have stopping conditions. 'reverse_stack()' returns when the stack is empty, and 'insert_at_bottom()'pushes the target value when the stack is empty.
 
+
+--------------------------------------------------------------------------------
 ##how to run
+--------------------------------------------------------------------------------
 
 Save the Python program as problem3.py.
 
