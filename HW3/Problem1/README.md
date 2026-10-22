@@ -87,11 +87,4 @@ Save the Python source code as problem1.py
 To run one test case：
 python3 problem1.py < problem1Resources/palendrome_0.txt
 
-To run all 15 test input files, use the following commands:
-
-for f in problem1Resources/palendrome_[0-4]*.txt; do
-    echo "===== $f ====="
-    python3 problem1.py < "$f"
-done
-
-The test execution results are saved in problem1Executions.txt in the main Problem1 folder.
+The test execution results are saved in both problem1Executions.txt and screenshot folder in the main Problem1 folder.
