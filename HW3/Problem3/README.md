@@ -17,13 +17,13 @@ Step 1: Create three types of stacks
 
 Create an array-based stack, a singly linked list stack, and a doubly linked list stack, respectively
 
-1.1 define the SinglyNode class
+1.1 Define the SinglyNode class
 
-    Each node stores a data value (value) and a next pointer to the next node.
+Each node stores a data value (value) and a next pointer to the next node.
 
 1.2 Define the DoublyNode class
 
-     Each node stores a data value, a prev pointer to the previous node, and a next pointer to the   next node. Both pointers are initialized to None.
+Each node stores a data value, a prev pointer to the previous node, and a next pointer to the next node. Both pointers are initialized to None.
 
 
 
@@ -43,15 +43,15 @@ Step 2: Implement a Stack Using an Array
 
 Step 3: Implement a Stack Using a Singly Linked List
 
-1.Initialize 'top = None' to indicate an empty stack. `top` always points to the top node of the stack.
+1.Initialize 'top = None' to indicate an empty stack. 'top' always points to the top node of the stack.
 
-2.'push(value)': Creates a new node, makes it point to the original top node, and then updates `top`.
+2.'push(value)': Creates a new node, makes it point to the original top node, and then updates 'top'.
 
-3.'pop()': Saves the value of the top node, moves `top` to the next node, and returns the saved value; if the stack is empty, it reports an error.
+3.'pop()': Saves the value of the top node, moves 'top' to the next node, and returns the saved value; if the stack is empty, it reports an error.
 
 4.'peek()': Returns the value of the top node, but does not remove the node.
 
-5.'is_empty()': Checks if `top` is None.
+5.'is_empty()': Checks if 'top' is None.
 
 
 
@@ -59,13 +59,13 @@ Step 4: Implement a Stack Using a Doubly Linked List
 
 1.Initialize 'top = None' and 'bottom = None', representing the top and bottom of the stack, respectively. An empty stack contains no nodes.
 
-2.'push(value)': Creates a new node, connects it to the original top node, updates the relevant pointers, and updates `top` to the new node. If the original stack is empty, the new node becomes both the top and bottom node.
+2.'push(value)': Creates a new node, connects it to the original top node, updates the relevant pointers, and updates 'top' to the new node. If the original stack is empty, the new node becomes both the top and bottom node.
 
-3.'pop()': Saves the value of the top node, moves `top` to the next node, and updates the relevant pointers. If the stack becomes empty, `bottom` is set to `None`; finally, the saved value is returned.
+3.'pop()': Saves the value of the top node, moves 'top' to the next node, and updates the relevant pointers. If the stack becomes empty, 'bottom' is set to 'None'; finally, the saved value is returned.
 
 4.'peek()': Returns the value of the top node, but does not remove the node.
 
-5.'is_empty()': Checks if `top` is 'None'.
+5.'is_empty()': Checks if 'top' is 'None'.
 
 
 Step 5: For each stack, call push() sequentially from 1 to 10 to push the stack in order
