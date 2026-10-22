@@ -68,11 +68,11 @@ Step 3: use two nested while loops to check each pair of distinct lines to deter
 
 - If the two lines have different y-intercepts (b_1 != b_2), then the two lines are distinct parallel lines, and return False
 
-4. Use an `if` statement to check the return value of the helper function.
+4. Use an 'if' statement to check the return value of the helper function.
 
-- If the helper function returns `True`, it means that at least one pair of lines intersects or coincides. Immediately output "All Ghosts: were not eliminated" and terminate the main algorithm, no longer checking other line pairs
+- If the helper function returns 'True', it means that at least one pair of lines intersects or coincides. Immediately output "All Ghosts: were not eliminated" and terminate the main algorithm, no longer checking other line pairs
 
-- If the helper function returns `False`, it means that the current pair of lines does not intersect or coincide. In this case, increment `j` by 1 and continue checking the current line with the next line that has not yet been compared
+- If the helper function returns 'False', it means that the current pair of lines does not intersect or coincide. In this case, increment 'j' by 1 and continue checking the current line with the next line that has not yet been compared
 
 5. Continue the outer loop
 
@@ -101,10 +101,4 @@ Run one test：
 
 python3 problem4.py < problem4Resources/ghostbusters_input_0.txt
 
-To run all 11 test cases, use the following commands:
-
-for i in $(seq 0 10); do
-    python3 problem4.py < "problem4Resources/ghostbusters_input_${i}.txt"
-done
-
-The test execution results are saved in problem4Executions.txt.
+The test execution results are saved in both problem4Executions.txt and screenshot folder in the main Problem1 folder.
