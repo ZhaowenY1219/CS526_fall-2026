@@ -118,3 +118,17 @@ Interesting aspects
 --------------------------------------------------------------------------------
 how to run
 --------------------------------------------------------------------------------
+
+Test:
+
+python3 problem3.py < problem3Resources/rightangles_1.txt
+
+python3 problem3.py < problem3Resources/rightangles_2.txt
+
+python3 problem3.py < problem3Resources/rightangles_3.txt
+
+The outputs from all three test runs are recorded in problem3Executions.txt and screenshots folder.
+
+
+
+
