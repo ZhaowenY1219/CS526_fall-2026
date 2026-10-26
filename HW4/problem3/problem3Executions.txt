@@ -1,0 +1,8 @@
+]633;E;echo "=== Test 1: rightangles_1.txt ===";4373c577-6362-46cf-87dc-83e964a915ce]633;C=== Test 1: rightangles_1.txt ===
+4
+
+=== Test 2: rightangles_2.txt ===
+7
+
+=== Test 3: rightangles_3.txt ===
+5295
