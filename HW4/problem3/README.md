@@ -22,9 +22,11 @@ step 1 Read the number of points and their coordinates
 
 step 2 Let A be a fixed right-angle vertex
 --------------------------------------------------------------------------------
- 1.Use a loop to treat each coordinate point in turn as a possible right-angle vertex A = (x_A, y_A), and all other points as B = (x_B, y_B).
-   Once we've found a potential fixed right-angle vertex A, we simply need to find the other two points, B and C, such that the sides AB and AC are perpendicular to each other. 
-   This avoids having to check every possible combination of the three points.
+1.Use a loop to treat each coordinate point in turn as a possible right-angle vertex A = (x_A, y_A), and all other points as B = (x_B, y_B).
+   
+2.Once we've found a potential fixed right-angle vertex A, we simply need to find the other two points, B and C, such that the sides AB and AC are perpendicular to each other. 
+   
+3.This avoids having to check every possible combination of the three points.
 
 step 3 Initialize the vertex count table
 --------------------------------------------------------------------------------
