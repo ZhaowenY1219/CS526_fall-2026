@@ -64,3 +64,10 @@ how to run
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
+python3 problem2.py < problem2Resources/fewest_1.txt
+
+python3 problem2.py < problem2Resources/fewest_2.txt
+
+python3 problem2.py < problem2Resources/fewest_3.txt
+
+The outputs from all three test runs are recorded in problem2Executions.txt and screenshots folder.
