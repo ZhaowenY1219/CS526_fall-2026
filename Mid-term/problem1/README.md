@@ -1,6 +1,6 @@
 
 ================================================================================
-README.txt - Problem 1:Snow fall
+README.md - Problem 1:Snow fall
 ================================================================================
 
 
@@ -10,7 +10,7 @@ README.txt - Problem 1:Snow fall
 
 This question need us to determine whether any three consecutive days have a combined snowfall strictly greater than half of the total snowfall, given the cumulative snowfall totals for n days. 
 
-My program reads the input, checks every possible group of three consecutive days using cumulative totals, and prints the input values followed by solution: YES or solution: NO. It outputs NO when fewer than three days are provided.
+My program reads the input, uses a loop to iterate through all possible combinations of three consecutive dates. For each combination, it calculates the total snowfall over those three days and compares it to half of the total snowfall for all days. If the snowfall for any set of three consecutive days is strictly greater than half of the total snowfall, the program stops checking and outputs 'solution: YES'. Otherwise, after checking all possible combinations, the program outputs 'solution: NO'. If the number of days entered is less than three, the program will output 'solution: NO'.
 
 --------------------------------------------------------------------------------
  Algorithm
