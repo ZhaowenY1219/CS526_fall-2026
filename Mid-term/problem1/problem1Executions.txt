@@ -1,0 +1,23 @@
+]633;E;echo "CS526 Problem 1 - Snowfall Test Results";91929081-f577-4616-885b-4508b84cf91d]633;CCS526 Problem 1 - Snowfall Test Results
+========================================
+
+Test 1: snowfall_input1.txt
+Command: python3 problem1.py < problem1Resources/snowfall_input1.txt
+1 4 10 14 15 17 17 23 solution: YES
+
+Test 2: snowfall_input2.txt
+Command: python3 problem1.py < problem1Resources/snowfall_input2.txt
+44 127 166 231 238 320 363 429 500 511 577 642 689 764 812 886 solution: NO
+
+Test 3: snowfall_input3.txt
+Command: python3 problem1.py < problem1Resources/snowfall_input3.txt
+3 8 14 19 21 24 25 25 32 solution: NO
+
+Test 4: snowfall_input4.txt
+Command: python3 problem1.py < problem1Resources/snowfall_input4.txt
+1 2 3 4 5 solution: YES
+
+Test 5: snowfall_input5.txt
+Command: python3 problem1.py < problem1Resources/snowfall_input5.txt
+1 2 3 solution: YES
+
