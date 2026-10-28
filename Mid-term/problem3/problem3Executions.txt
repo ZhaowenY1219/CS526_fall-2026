@@ -1,0 +1,13 @@
+CS526 Problem 3 - Test Results
+Test 1: puzzle_game_input1.txt
+The board is valid
+
+Test 2: puzzle_game_input2.txt
+The board is invalid
+
+Test 3: puzzle_game_input3.txt
+The board is valid
+
+Test 4: puzzle_game_input4.txt
+The board is invalid
+
