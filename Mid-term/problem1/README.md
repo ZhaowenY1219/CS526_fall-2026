@@ -70,6 +70,10 @@ Step 4: Iterate through all combinations of three consecutive days
 Step 5: Determine the final answer and output the result
 --------------------------------------------------------------------------------
 
+1. if n < 3, the final answer remains 'NO'
+2. Output the cumulative snowfall from the input data, followed by 'Solution: YES' or 'Solution: NO'
+
+
 -------------------------------------------------------------------------------
 Interesting aspects
 --------------------------------------------------------------------------------
