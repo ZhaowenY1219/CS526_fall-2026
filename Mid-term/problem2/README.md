@@ -121,5 +121,11 @@ Step 5: Check the final board and output the result
   How to run
 --------------------------------------------------------------------------------
 
+Run the program using input redirection:
 
+python3 problem2.py < problem2Resources/pandemic_input1.txt
+
+python3 problem2.py < problem2Resources/pandemic_input2.txt
+
+The execution results for both test input files are recorded in problem2Executions.txt and screenshots folder.
 
