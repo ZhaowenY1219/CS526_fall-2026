@@ -13,7 +13,7 @@ This question need us to simulate the spread of an infection in an N × N board.
 
 2. The count of infected counties is updated to reflect the number of infected counties only after the entire board has been checked.
 
-3. A `while` loop repeats the daily simulation until no new cases appear and the program then checks whether there are any uninfected counties remaining to ensure none are overlooked.
+3. A 'while' loop repeats the daily simulation until no new cases appear and the program then checks whether there are any uninfected counties remaining to ensure none are overlooked.
 
 --------------------------------------------------------------------------------
   Algorithm
