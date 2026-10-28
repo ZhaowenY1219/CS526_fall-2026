@@ -34,63 +34,62 @@ Step 1: Initialize the board
 Step 2: Check for and count infected neighbors
 --------------------------------------------------------------------------------
 
-1. Use two nested for loops:
+1. At the beginning of each day, create an empty list to track the number of infected neighbors later: 'new_infections = []'
 
-1.1 First loop: Iterate through the rows, letting 'row' range from 0 to N-1 and move to the right
+2. Use two nested for loops:
 
-1.2 Second loop: Iterate through the columns, for the currently selected row, let 'column' range from 0 to N-1 and move down
+2.1 First loop: Iterate through the rows, letting 'row' range from 0 to N-1 and move to the right
 
-
-2. Check the status of the current cell
-
-2.1 If board[row][column] == "X", it means the current county is already infected, skip this cell and move on to the next one.
-
-2.2 If board[row][column] == ".", it means the current county is still healthy, continue checking its neighbors.
+2.2 Second loop: Iterate through the columns, for the currently selected row, let 'column' range from 0 to N-1 and move down
 
 
-3. Create a counter variable: 'infected_neighbors = 0'
+3. Check the status of the current cell
+
+3.1 If board[row][column] == "X", it means the current county is already infected, skip this cell and move on to the next one.
+
+3.2 If board[row][column] == ".", it means the current county is still healthy, continue checking its neighbors.
+
+
+4. Create a counter variable: 'infected_neighbors = 0'
 
 This variable is used to track the number of infected neighboring counties surrounding the current county. 
 
 Each time a healthy county begins its inspection, this variable is reset to 0.
 
-4. Check the cell above the current cell: board[row - 1][column]
+5. Check the cell above the current cell: board[row - 1][column]
 
-4.1 The valid range for the row index is 0 to N-1, so only when row > 0 can the existence of an upper neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
+5.1 The valid range for the row index is 0 to N-1, so only when row > 0 can the existence of an upper neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
 
-4.2 If board[row - 1][column] == “X”, then 'infected_neighbors += 1'.
+5.2 If board[row - 1][column] == “X”, then 'infected_neighbors += 1'.
 
-5. Check the neighbor below the current cell: board[row + 1][column]
+6. Check the neighbor below the current cell: board[row + 1][column]
 
-5.1 Because valid range for the row index is 0 to N-1, so only when row < N - 1 can the existence of a lower neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
+6.1 Because valid range for the row index is 0 to N-1, so only when row < N - 1 can the existence of a lower neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
 
-5.2 If board[row + 1][column] == "X", then 'infected_neighbors += 1'.
+6.2 If board[row + 1][column] == "X", then 'infected_neighbors += 1'.
 
 
-6. Check the neighbor on the left: board[row][column - 1]
+7. Check the neighbor on the left: board[row][column - 1]
 
-6.1 Because valid range for the row index is 0 to N-1, so only when column > 0 can the existence of a left neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
+7.1 Because valid range for the row index is 0 to N-1, so only when column > 0 can the existence of a left neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
 
-6.2 If board[row][column - 1] == "X", then 'infected_neighbors += 1'.
+7.2 If board[row][column - 1] == "X", then 'infected_neighbors += 1'.
 
-7. Check the neighbor on the right: board[row][column + 1]
+8. Check the neighbor on the right: board[row][column + 1]
 
-7.1 Because valid range for the row index is 0 to N-1, so only when column < N - 1 can the existence of a right neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
+8.1 Because valid range for the row index is 0 to N-1, so only when column < N - 1 can the existence of a right neighbor be verified, and only then can we proceed to determine whether that neighbor is infected.
 
-7.2 If board[row][column + 1] == “X”, then 'infected_neighbors += 1'
+8.2 If board[row][column + 1] == “X”, then 'infected_neighbors += 1'
 
 
 Step 3: Record all counties with new infections on that day
 --------------------------------------------------------------------------------
 
-1. First,create an empty list to track the number of infected neighbors later: 'new_infections = []'
+1. After check the value of 'infected_neighbors'，evaluate the value of infected_neighbors
 
+1.1 If 'infected_neighbors' >= 2, the infection condition is met, and the coordinates of the current cell are added to the list;
 
-2. Check the value of 'infected_neighbors'
-
-2.1 If 'infected_neighbors' >= 2, the infection condition is met, and the coordinates of the current cell are added to the list;
-
-2.2 If 'infected_neighbors' < 2, do not add that coordinate
+1.2 If 'infected_neighbors' < 2, do not add that coordinate
 
 
 Step 4: Update the game board uniformly
