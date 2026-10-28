@@ -1,0 +1,10 @@
+CS526 Problem 2 - Test Results
+================================
+Test 1: pandemic_input1.txt
+Command: python3 problem2.py < problem2Resources/pandemic_input1.txt
+There are healthy counties left
+
+Test 2: pandemic_input2.txt
+Command: python3 problem2.py < problem2Resources/pandemic_input2.txt
+There are no healthy counties left
+
