@@ -135,4 +135,11 @@ Interesting aspects
 --------------------------------------------------------------------------------
 How to run
 --------------------------------------------------------------------------------
+Run the program using input redirection:
 
+python3 problem3.py < problem3Resources/puzzle_game_input1.txt
+python3 problem3.py < problem3Resources/puzzle_game_input2.txt
+python3 problem3.py < problem3Resources/puzzle_game_input3.txt
+python3 problem3.py < problem3Resources/puzzle_game_input4.txt
+
+The execution results for all four test input files are recorded in problem3Executions.txt and screenshots folder.
