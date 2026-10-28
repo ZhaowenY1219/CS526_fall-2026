@@ -17,7 +17,7 @@ My program reads the board size, allowed symbols, and board contents. The progra
 Step 1: Check the symbols on the board 
 --------------------------------------------------------------------------------
 
-1.The size of the board: n , and calculate the side length of each sub-board: 'size = √n'
+1.The size of the board: n , and calculate the side length of each sub-board: 'size = math.isqrt(n)'
 
 2.Iterate through every position on the board, board[i][j], where [i] is the row index and [j] is the column index, both ranging from 0 to n-1.
 
