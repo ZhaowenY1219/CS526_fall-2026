@@ -1,0 +1,23 @@
+]633;E;echo "===== Test 1: longest_seq1.txt =====";5714f32a-1a9a-4a38-b584-32741e564992]633;C===== Test 1: longest_seq1.txt =====
+File Input: longest_seq1.txt
+Longest Sequence: 4
+
+===== Test 2: longest_seq2.txt =====
+File Input: longest_seq2.txt
+Longest Sequence: 7
+
+===== Test 3: longest_seq3.txt =====
+File Input: longest_seq3.txt
+Longest Sequence: 10
+
+===== Test 4: longest_seq4.txt =====
+File Input: longest_seq4.txt
+Longest Sequence: 39
+
+===== Test 5: longest_seq5.txt =====
+File Input: longest_seq5.txt
+Longest Sequence: 192
+
+===== Test 6: longest_seq6.txt =====
+File Input: longest_seq6.txt
+Longest Sequence: 1
