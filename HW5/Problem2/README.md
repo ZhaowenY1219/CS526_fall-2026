@@ -1,5 +1,5 @@
 ================================================================================
-README.md - Problem 2: 
+README.md - Problem 2: Morse Code
 ================================================================================
 
 --------------------------------------------------------------------------------
@@ -89,3 +89,12 @@ P(n) = M[1][n-1] + M[2][n-2] +M[3][n-3]
 --------------------------------------------------------------------------------
  How to run
 --------------------------------------------------------------------------------
+
+python3 problem2.py 1 < Problem2Resource/vowel_input1.txt
+python3 problem2.py 2 < Problem2Resource/vowel_input2.txt
+python3 problem2.py 3 < Problem2Resource/vowel_input3.txt
+python3 problem2.py 4 < Problem2Resource/vowel_input4.txt
+
+
+
+
