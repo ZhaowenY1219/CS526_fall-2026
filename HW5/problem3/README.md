@@ -95,4 +95,10 @@ Interesting aspect
 How to run
 --------------------------------------------------------------------------------
 
+python3 problem3.py 1 < Problem3Resource/longest_seq1.txt
+python3 problem3.py 2 < Problem3Resource/longest_seq2.txt
+python3 problem3.py 3 < Problem3Resource/longest_seq3.txt
+python3 problem3.py 4 < Problem3Resource/longest_seq4.txt
+python3 problem3.py 5 < Problem3Resource/longest_seq5.txt
+python3 problem3.py 6 < Problem3Resource/longest_seq6.txt
 
