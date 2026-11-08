@@ -102,3 +102,4 @@ python3 problem3.py 4 < Problem3Resource/longest_seq4.txt
 python3 problem3.py 5 < Problem3Resource/longest_seq5.txt
 python3 problem3.py 6 < Problem3Resource/longest_seq6.txt
 
+The outputs from all three test runs are recorded in problem2Executions.txt and screenshots folder.
