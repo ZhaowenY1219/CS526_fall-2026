@@ -1,0 +1,15 @@
+]633;E;echo "===== Test 1: vowel_input1.txt =====";d56a3687-6071-4ba1-a44e-6804f7b26dbe]633;C===== Test 1: vowel_input1.txt =====
+File Input: vowel_input1.txt
+The Number of Vowel combinations is: 6
+
+===== Test 2: vowel_input2.txt =====
+File Input: vowel_input2.txt
+The Number of Vowel combinations is: 8
+
+===== Test 3: vowel_input3.txt =====
+File Input: vowel_input3.txt
+The Number of Vowel combinations is: 0
+
+===== Test 4: vowel_input4.txt =====
+File Input: vowel_input4.txt
+The Number of Vowel combinations is: 193050000
