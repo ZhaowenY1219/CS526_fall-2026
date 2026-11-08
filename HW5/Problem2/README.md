@@ -95,6 +95,6 @@ python3 problem2.py 2 < Problem2Resource/vowel_input2.txt
 python3 problem2.py 3 < Problem2Resource/vowel_input3.txt
 python3 problem2.py 4 < Problem2Resource/vowel_input4.txt
 
-
+The outputs from all three test runs are recorded in problem2Executions.txt and screenshots folder.
 
 
