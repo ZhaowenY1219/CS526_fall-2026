@@ -7,6 +7,9 @@ README.md - Problem 1
  Introduction 
 --------------------------------------------------------------------------------
 
+The program implements four main operations: AddNode(), DeleteNode(), FindNode(), and PrintTree(), which are used to insert nodes, delete nodes, find nodes, and print the nodes in the tree, respectively.
+
+According to the assignment requirements, the program will randomly generate an input set containing 5 to 50 integers, each in the range of 1 to 1000. It will then create an initial BST, test node insertion, deletion, and search operations in sequence, and print the tree after each operation.
 
 
 --------------------------------------------------------------------------------
@@ -111,11 +114,13 @@ The printing process: using inorder traversal to print all nodes in the BST in a
  Interesting aspects
 --------------------------------------------------------------------------------
 
+1.This program recursively traverses the nodes in the order "left -> root -> right". Due to the sorting property of a binary search tree (BST), this traversal method prints the values of all nodes in ascending order.
 
-
+2.The deletion process depends on whether the target node has no children, one child, or two children. For nodes with two children, the program uses the "inorder predecessor" to perform the deletion operation.
 
 --------------------------------------------------------------------------------
  How to run
 --------------------------------------------------------------------------------
 
+python3 HW5/problem1/problem1.py
 
