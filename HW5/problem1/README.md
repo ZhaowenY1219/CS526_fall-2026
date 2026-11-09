@@ -97,16 +97,25 @@ step 6 PrintTree( )
 The printing process: using inorder traversal to print all nodes in the BST in ascending order
 
 1. check whether the tree is empty. If the root is None, print a message indicating that the tree is empty and stop
-2. start from the root node and call the recursive helper method with the current node and set the initial depth = 0
+2. start from the root node and call the recursive helper method with the current node 
 3. check whether the current node is None. If the node is None, stop the recursion and return to the previous call
-4. visit the left child recursively by calling the helper method with the left child and and increment the depth by 1.
+4. visit the left child recursively by calling the helper method with the left child 
 5. after the entire left subtree has been visited, print the value of the current node
-6. visit the right child recursively by calling the helper method with the right child and and increment the depth by 1.
+6. visit the right child recursively by calling the helper method with the right child 
 7. If the right child node does not exist, the recursive call stops and returns to the previous call.
 8. Continues the process until all node have been visited and printed
 9. The process follows the order: left -> root -> right. 
 10. Call 'PrintTree()' after creating the initial tree and every 'AddNode()' and 'DeleteNode()'
 
+--------------------------------------------------------------------------------
+ Interesting aspects
+--------------------------------------------------------------------------------
 
+
+
+
+--------------------------------------------------------------------------------
+ How to run
+--------------------------------------------------------------------------------
 
 
