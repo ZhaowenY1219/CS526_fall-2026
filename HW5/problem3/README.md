@@ -7,9 +7,7 @@ README.md - Problem 3: Longest Alternating Increasing Squence
  Introduction
 --------------------------------------------------------------------------------
 
-
-
-
+This problem is solved using dynamic programming. By creating two DP arrays, 'DP_A' and 'DP_B', which record the lengths of the longest valid alternating increasing sequences ending with elements from 'A' and 'B', and by gradually updating the states using recursive relationships, we can ultimately find the longest sequence that satisfies all conditions.
 
 --------------------------------------------------------------------------------
  Algorithm
@@ -89,7 +87,11 @@ Answer = max(max(DP_A),max(DP_B))
 --------------------------------------------------------------------------------
 Interesting aspect
 --------------------------------------------------------------------------------
+1. Two DP Arrays: Create DP_A and DP_B to record the lengths of the longest valid sequences that can be formed when an element from either A or B is used as the last element. By distinguishing the source of the last element, we ensure that subsequent elements are selected alternately from A and B.
 
+2. Recurrence Relations: When the current element comes from A, the previous element must come from B; when the current element comes from B, the previous element must come from A. Each time an element is connected.
+
+3. Base Case: Initialize all elements in both DP arrays to 1, since each individual element can form a valid sequence of length 1.
 
 --------------------------------------------------------------------------------
 How to run
