@@ -54,7 +54,36 @@ compare the target value with the current node:
 4. if an empty position is reached without finding the target, return False
 5. if the tree is empty, return False
 
-After the entire left subtree has been visited, print the value of the current node
+step 5 DeleteNode(Value)
+--------------------------------------------------------------------------------
+
+Case 1: the node has no children
+
+1. search for the node containing the target value
+2. check whether the node has any children
+3. if the node to be deleted is the parent's left child, set 'parent.left' to 'None'
+4. if the node to be deleted is the parent's right child, set 'parent.right' to 'None'
+5. if the node is the root, set the root to None
+
+Case 2: the node has one child
+
+1. search for the node containing the target value
+2. check which child exists
+3. if only the left child exists, replace the node with its left child
+4. if only the right child exists, replace the node with its right child
+5. update the parent's reference to connect directly to the existing child
+6. if the node is the root, update the root to point to the existing child
+
+Case 3: the node has two children
+
+1. search for the node containing the target value
+2. if the node has two children, move to its left subtree
+3. find the largest node in the left subtree by following the right child until no right child exists
+4. copy the value of the in-order predecessor into the node to be deleted, replacing the original value.
+5. if the predecessor node is the target node’s direct left child, use the target node’s left reference; otherwise, use the right reference of the predecessor node’s parent
+6. update this reference to point to the predecessor node’s left child (if one exists); otherwise, set it to None and remove the predecessor node from its original position.
+
+
 step 6 PrintTree( )
 --------------------------------------------------------------------------------
 
