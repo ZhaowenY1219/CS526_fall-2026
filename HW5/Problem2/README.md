@@ -6,7 +6,7 @@ README.md - Problem 2: Morse Code
  Introduction 
 --------------------------------------------------------------------------------
 
-
+This problem is solved using the tabulation from dynamic programming. By constructing a three-row state table, we examine each combination of symbols of lengths 1, 2, and 3 in the Morse code string one by one, and use the recurrence relation to count all possible vowel decodings.
 
 --------------------------------------------------------------------------------
  Algorithm
@@ -85,6 +85,9 @@ P(n) = M[1][n-1] + M[2][n-2] +M[3][n-3]
  Interesting aspects
 --------------------------------------------------------------------------------
 
+1. Dynamic Programming: Using a bottom-up state table, it breaks down a large decoding problem into smaller subproblems and stores previously computed results to avoid redundant calculations.
+
+2. Recurrence Relation: Based on whether the last vowel occupies 1, 2, or 3 symbols, look up the previously calculated number of decodings for each case, and sum all valid cases to obtain the total number of decodings for the current prefix.
 
 --------------------------------------------------------------------------------
  How to run
