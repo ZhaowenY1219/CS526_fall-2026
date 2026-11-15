@@ -142,13 +142,12 @@ step 9 Define 'is_empty()' and 'len()'
 step 10 Define print_heap()
 --------------------------------------------------------------------------------
 1. check whether the heap is empty, if the root is 'None', print an appropriate message and stop
-2. calculate the height of the heap by recursively examining its left and right subtrees
-3. calculate the maximum width if the node values by examing all nodes in the heap and finding the longest string representation of a value
-4. determine the relative positions of the current node and its children for displaying the tree structure
-5. print the root value at the top of the display
-6. print the connection symbol'/' above each existing left child and '\' above each existing right child
-7. print child value below its corresponding parent while preserving its correct position in the tree
-8. continue recursively until all nodes have been displayed
+2. calculate the height of the heap and determine horizontal spacing based on the number of levels and the width of the node values
+3. start the recursive drawing process from the root, using depth 0 and position 1
+4. calculate the horizontal position of the current node based on its depth and logical tree position, then print its value at the calculated position.
+5. if the current node has a left child, calculate its position using 'left_position = position * 2 + 1", print the symbol'/' between parent and the left child, and recursively dispaly the left subtree
+6. if the current node has a right child, calculate its position using 'right_position = position * 2 + 1", print the symbol'\' between parent and the right child, and recursively dispaly the right subtree
+7. continue recursively until all nodes have been displayed,then print the completed tree from top to bottom
 
 step 11 Main Program
 --------------------------------------------------------------------------------
