@@ -31,3 +31,17 @@ when connecting nodes to form the binary tree, update the references between the
 
            left_node.parent = root_node  # set the left child's parent reference to point back to the parent node
            right_mode.parent = root_node # set the right child's parent reference to point back to the parent node
+
+step 2 Define the Heap ADT
+--------------------------------------------------------------------------------
+Create a Min- Heap ADT to manage the entire binary heap, and the heap must maintain the following conditions:
+1. 'root': stores a reference to the root node of the heap. if heap is empty, set it to 'None': self.root = None
+2. 'size': stores  the current number of nodes in the heap. initialize to '0'
+
+when the heap is initialized, set 'root' to 'None' and 'size' to '0'
+
+The heap must maintain the following conditions after every operation:
+1. each parent node's value must be less than or equal to their children's value
+2. every level must be full except the last level, which must be filled from left to right
+3. each node's parent,lef,right reference must correctly represent its position in the tree
+4. update the size whenever a node is successfully inserted or removed
