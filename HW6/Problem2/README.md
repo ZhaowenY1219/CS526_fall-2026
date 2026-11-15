@@ -45,3 +45,40 @@ The heap must maintain the following conditions after every operation:
 2. every level must be full except the last level, which must be filled from left to right
 3. each node's parent,lef,right reference must correctly represent its position in the tree
 4. update the size whenever a node is successfully inserted or removed
+
+The heap ADT needs to implement the following operations:
+insert(value)
+peek()
+extract_min()
+delete(value)
+build(values)
+heap_sort()
+is_empty()
+__len__() len(heap)
+print_heap()
+
+step 3 Define insert(value)
+--------------------------------------------------------------------------------
+The insert(value) uses the next available position to maintain the complete shape of the binary heap, which followed by bubbling up to restore the heap order
+
+1. check whether the heap is empty. if it is empty, create a new node with a given value and set it as a root, increase the heap size to 1, and stop the insertion process.
+2. calculate the next free position by adding 1 to current heap size. ("next_position = self.size+1
+3. convert the position into binary and remove the leading 1 to determine the path from the root. For example, if the nexy free position is 6, its binary representation is 110, then removing the  leading 1, the remaining path is 10, meaning right first and then left.
+4. start from the root and follow the path, excluding its final dogit, to locate the parent of the new node. A 0 means move to the left child, while a 1 means move to the right child.
+5. create a new node containing the given value and set its parent reference to the local parent.(new_node.parent = parent)
+6. connect the new node to the parent's left or right reference according to the final digit of the binary path.
+7.  increase the heap size by 1 after successfully connecting the new node. ("self.size += 1")
+8.  start bubbling up from the newly inserted node by comparing its value with its parent's value
+9.  if the current node's value is strictly smaller than its parent's value, swap their values and move upward to the parent.
+10. repeat the  comparison and swapping process until the current node's value is no longer smaller than its parent's value, or the current node reaches the root.  
+
+step 4 Define peek()
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
