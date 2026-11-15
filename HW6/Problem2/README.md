@@ -74,10 +74,24 @@ The insert(value) uses the next available position to maintain the complete shap
 
 step 4 Define peek()
 --------------------------------------------------------------------------------
+1. check whether the heap is empty
+2. if the heap is enpty, raise an IndexError
+3. otherwise, return the value stored in the root without modifying the heap 
 
-
-
-
+step 5 Define extract_min()
+--------------------------------------------------------------------------------
+1. check wheter the heap is empty, if it is empty, raise an IndexError
+2. save the value stored in the root node as the minimum value to be returned
+3. if the heap contains only one node, set the root to None, decrease the heap size to 0,and return the saved minimum value
+4. locate the last node using the current heap size and its binary path
+5. copy the last node's value into the root node
+6. remove the last node from its original position by updating the corresponding reference of its parent
+7. decrease the heap size by 1
+8. start bubbling down from the root
+9. compare the current node with its existing children and identify the child with the smaller value
+10. if the current node with its existing children and identify the child with smaller value
+11. repeat the comparison and swapping process until the current node is no larger than its smaller child, or it has no children
+12. return the saved minmum value
 
 
 
