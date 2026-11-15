@@ -126,6 +126,40 @@ step 8 Define heap_sort()
 5. continue until the copied heap becomes empty
 6. return the result list in increasing order without modifying the origibal heap
 
+step 9 Define is_empty() and len()
+--------------------------------------------------------------------------------
+9.1 is_empty()
+1. check whether the heap size = 0
+2. if the heap size = 0,return True
+3. otherwise, return False
+
+9.2 len()
+1. return the current heap size
+
+step 10 Define print_heap()
+--------------------------------------------------------------------------------
+1. check whether the heap is empty, if it is empty, print an appropriate message and stop
+2. start from the root node and recursively examine its left and right subtrees
+3. determine the relative positions of the current node and its children for displaying the tree structure
+4. print the root value at the top of the display
+5. print the connection symbol'/' above each existing left child and '\' above each existing right child
+6. print child value below its corresponding parent while preserving its correct position in the tree
+7. continue recursively until all nodes have been displayed
+
+step 11 Main Program
+--------------------------------------------------------------------------------
+1. read a list if values from the standard input
+2. initialize an empty Min-heap
+3. print the original input values
+4. process each value in its original order
+5. call insert(value) to insert the current value into the heap
+6. after each insertion, call print_heap() to display the updated heap
+7. continue until all input values have been inserted
+
+
+
+
+
 
 
 
