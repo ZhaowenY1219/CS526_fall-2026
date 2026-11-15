@@ -93,6 +93,40 @@ step 5 Define extract_min()
 11. repeat the comparison and swapping process until the current node is no larger than its smaller child, or it has no children
 12. return the saved minmum value
 
+step 6 Define delete(value)
+--------------------------------------------------------------------------------
+1. start searching from the root node to find a node containing the target value
+2. traverse the heap by checking the current node and then searching its left and right subtrees
+3. if no matching node is found, return False
+4. locate the last node in the heap using the current heap size and its binary path
+5. if the target node is  the last node, remove it directly by updating its parent's corresponding reference
+6. otherwise, copy the last node's value into the target node
+7. remove the last node from its original position by updating its parent's corresponding reference
+8. decrease the heap size by 1
+9. compare the repalcement value with its parent's value
+10. if the repalcement value is strictly smaller than its parent's value, restore the heap order by bubbling up
+11. otherwise, restore the heap order by bubbling down, comparing the current node with its smaller child
+12. return True after successfully deleting one copy of the target value
+
+step 7 Define build(value)
+--------------------------------------------------------------------------------
+1. reset the heap by setting the root to Node and the heap size to 0
+2. process the input values one at time in their original order
+3. for each value, call insert(value) to add it to the heap
+4. after each insertion, restore the heap order through bubbling up
+5. continue until all input values have been inserted
+6. return the completed heap
+
+step 8 Define heap_sort()
+--------------------------------------------------------------------------------
+1. create a new heap as a copy of the original heap, preserving the node values and linked - node structure
+2. initialize an empty result list to store the sorted values
+3. while the copied heap is not empty, call extract_min() on the copied heap
+4. append each extracted minimum value to the result list
+5. continue until the copied heap becomes empty
+6. return the result list in increasing order without modifying the origibal heap
+
+
 
 
 
