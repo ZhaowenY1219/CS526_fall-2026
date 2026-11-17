@@ -2,11 +2,16 @@
 README.md - Problem 3
 ================================================================================
 
-
 --------------------------------------------------------------------------------
   Introduction 
 --------------------------------------------------------------------------------
+The program maintains two heaps to divide the sales amounts into two halves:
 
+'lower_heap': a Max-Heap that stores the smaller half of the sales amount
+
+'upper_heap': a Min-Heap that stores the larger half of the sales amounts
+
+After each new sale is processed, the program inserts the value into the appropriate heap and rebalances the two heaps when necessary. It then calculates and stores the current median.
 
 --------------------------------------------------------------------------------
   Algorithm
@@ -20,7 +25,7 @@ Create two heaps:
 
 The two heaps must maintain the following conditions:
 1. every value in lower_heap must be less than or equal to every value in upper_heap
-2. the number of  values in the two heaps must be euqal , or lower-heap may contain exactly one more value than upper_heap
+2. the number of  values in the two heaps must be euqal, or lower-heap may contain exactly one more value than upper_heap
 
 step 2: read the input and initialize the result list
 --------------------------------------------------------------------------------
@@ -60,13 +65,25 @@ step 6: store and print the medians
 --------------------------------------------------------------------------------
  Interesting aspects
 --------------------------------------------------------------------------------
+1.The Max-Heap is created by extending the original Heap class and modifying the bubbling up and bubbling down comparisons.
 
+2.All values in the Max-Heap must be less than or equal to all values in the Min-Heap. Their sizes must also remain equal, or the Max-Heap may contain exactly one more value than the Min-Heap.
 
+3.After each sale, the program checks the sizes of both heaps and moves the root value from one heap to the other when rebalancing is needed. The median can then be obtained directly from the root values without sorting the sales amounts or maintaining a sorted list.
 
 --------------------------------------------------------------------------------
  How to run
 --------------------------------------------------------------------------------
 
-
-
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input1.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input2.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input3.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input4.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input5.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input6.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input7.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input8.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input9.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input10.txt
+python3 HW6/problem3/problem3.py < HW6/problem3/problem3Resource/median_input11.txt
 
