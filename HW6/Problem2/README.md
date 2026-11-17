@@ -2,12 +2,12 @@
 README.md - Problem 2
 ================================================================================
 
-
 --------------------------------------------------------------------------------
  Introduction 
 --------------------------------------------------------------------------------
+This program implements a Binary Min-Heap using a binary tree of linked nodes. Each node contains a value and references to its left child, right child, and parent. The heap itself maintains a root reference and a size counter.
 
-
+The implementation follows two essential properties: Heap Order and Complete Shape. The parent node's value must always be less than or equal to the values of its children, and the last level of the tree must be filled from left to right.
 
 --------------------------------------------------------------------------------
  Algorithm
@@ -164,18 +164,22 @@ step 11 Main Program
  Interesting aspects
 --------------------------------------------------------------------------------
 
+1.The next free position is calculated using binary position numbering. By converting the position into a binary path, the program can locate the correct parent node and insert the new node in the next available position.
 
+2.Bubbling Up compares a newly inserted value with its parent, while Bubbling Down compares a replacement value with its smaller child.
 
-
+3.'heap_sort()' creates an independent copy of the original heap and repeatedly extracts the minimum value to produce an increasing sequence without modifying the original heap
 
 --------------------------------------------------------------------------------
  How to run
 --------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input1.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input2.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input3.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input4.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input5.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input6.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input7.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input8.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input9.txt
+python3 HW6/Problem2/problem2.py < HW6/Problem2/problem2Resource/heap_input10.txt
